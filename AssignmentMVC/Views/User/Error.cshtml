@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "ViewError";
+}
+
+<h2>ViewError</h2>
+@if (ViewBag.ErrorNull != null)
+{
+    @ViewBag.ErrorNull
+}
+@if (ViewBag.Errors != null)
+{
+    foreach (var error in ViewBag.Errors)
+    {
+        <li>
+            @error
+        </li>
+    }
+}
+
+

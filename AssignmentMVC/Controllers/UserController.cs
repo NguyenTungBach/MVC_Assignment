@@ -68,7 +68,10 @@ namespace AssignmentMVC.Controllers
         {
             User user = new User()
             {
-                UserName = UserName
+                UserName = UserName,
+                Email = Email,
+                PhoneNumber = PhoneNumber,
+                IdentityCard = IdentityCard,
             };
 
             var result = await userManager.CreateAsync(user, PasswordHash);

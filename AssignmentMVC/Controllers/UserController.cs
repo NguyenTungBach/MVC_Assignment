@@ -29,10 +29,8 @@ namespace AssignmentMVC.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+            return View(myIdentityDbContext.Users.ToList());
         }
-
-
 
         public ActionResult Register()
         {
